@@ -1,0 +1,32 @@
+body{
+    background-image: url("../images/trivia-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-box{
+    border: black 1px;
+    height: 700px;
+    width: 500px;
+    background-color: darkolivegreen;
+    border-radius: 4px;
+    margin-left: 325px;
+    text-align: center;
+    
+}
+
+p, h2{
+    margin: 20px;
+}
+
+#quiz{
+    display: none;
+}
+
+#results{
+    display: none;
+}
+
+#timer{
+    font-size: 36px;
+}

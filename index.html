@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <script src = "assets/js/app.js" defer></script>
+</head>
+<body>
+    
+    <span id = 'timer'></span>
+
+    <div id = 'game-box'>
+
+        <div id = "start-up">
+            <h1>Gotham Trivia</h1>
+            <p>The Caped Crusader has been captured by The Riddler, and will execute him if you cannot answer his trivia game in time.</p>
+            <button id = "start">Start!</button>
+        </div>
+        <div id = 'quiz'>
+            <h2>Who is the son of Bruce Wayne?</h2>
+            <select class = "questions">
+                <option value= "" selected disabled hidden>Choose here</option>
+                <option value = "false">Thomas Elliot</option>
+                <option value = "false">Thomas Wayne</option>
+                <option value = "false">Dick Grayson</option>
+                <option value = "true">Damian Wayne</option>
+            </select>
+
+            <h2>Which villain broke batman's back?</h2>
+            <select class = "questions">
+                <option value= "" selected disabled hidden>Choose here</option>
+                <option value = "false">Juggernaut</option>
+                <option value = "false">Deathstroke</option>
+                <option value = "true">Bane</option>
+                <option value = "false">Joker</option>
+            </select>
+
+            <h2>Which actor was the first to play batman?</h2>
+            <select class = "questions">
+                <option value= "" selected disabled hidden>Choose here</option>
+                <option value = "true">Adam West</option>
+                <option value = "false">Val Kilmer</option>
+                <option value = "false">Michael Keaton</option>
+                <option value = "false">Christian Bale</option>
+            </select>
+
+            <h2>What is the famous prison ward for the mentally insane in gotham?</h2>
+            <select class = "questions">
+                <option value= "" selected disabled hidden>Choose here</option>
+                <option value = "false">Wayne Psychiatric Ward</option>
+                <option value = "false">GCPD</option>
+                <option value = "true">Arkham Asylum</option>
+                <option value = "false">Blackgate</option>
+            </select>
+
+            <h2>What is the alter-ego of the District Attourney Harvey Dent?</h2>
+            <select class = "questions">
+                <option value= "" selected disabled hidden>Choose here</option>
+                <option value = "false">Hush</option>
+                <option value = "true">Two Face</option>
+                <option value = "false">Killer Croc</option>
+                <option value = "false">Scarecrow</option>
+            </select>
+
+            <h2>What actor played Joker in the 2008 film "The Dark Knight"?</h2>
+            <select class = "questions">
+                <option value= "" selected disabled hidden>Choose here</option>
+                <option value = "true">Heath Ledger</option>
+                <option value = "false">Cesar Romero</option>
+                <option value = "false">Mark Hamill</option>
+                <option value = "false">Jared Leto</option>
+            </select>
+            <br>
+            <br>
+            <button id = 'score'>Get Score</button>
+
+        </div>
+        <div id = 'results'>
+            <h1>Total</h1>
+            <h2 id = 'correct'></h2>
+            <h2 id = 'incorrect'></h2>
+            <h2 id = 'unanswered'></h2>
+            <br><br>
+            <button id = 'reset'>Reset</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
